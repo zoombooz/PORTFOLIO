@@ -1,12 +1,15 @@
-export default function ProjectCard(){
+export default function ProjectCard(props : {name : string, url : string, img : string}){
+    let {name, url, img} = props
     return(
-        <div className="bg-gray-100 w-64 h-64 m-8 rounded-xl">
-            <div className="h-5/6 bg-red-500">
-                <img src="https://picsum.photos/200" className="object-fill"/>
+        <a href={url} target="_blank" className="m-8">
+            <div className="bg-red-100 w-96 h-96 rounded-sm">
+                <div className="h-5/6">
+                    <img src={img} className="object-cover h-full"/>
+                </div>
+                <div className="flex bg-gray-700 h-1/6 items-center justify-center">
+                    <h1 className="text-white">{name}</h1>
+                </div>
             </div>
-            <div className="flex bg-gray-700 h-1/6 items-center justify-center">
-                <h1 className="text-white">  Project</h1>
-            </div>
-        </div>
+        </a>
     )
 }
