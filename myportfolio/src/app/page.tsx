@@ -6,7 +6,7 @@ import underConstructionImg from "../assets/underconstruction.jpg"
 import profileImg from "../assets/Zaky_Ahmad_Mak.png"
 
 let style = {
-    socialButton : "text-white text-2xl m-4 hover:text-3xl"
+    socialButton : "text-white text-2xl mx-4 mt-16 p-4 rounded-xl hover:bg-gray-400 hover:text-gray-700 transition duration-300"
 }
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
             <div className="h-screen" id="contact">
                 <div className="flex flex-col bg-gray-700  items-center justify-center h-5/6">
-                    <h1 className="text-white text-6xl font-bold">Let's work together...</h1>
+                    <h1 className="text-white text-6xl font-bold mb-8">Let&apos;s work together...</h1>
                     <div className="flex mt-8">
                         <div>
                             <a target="_blank" href="https://github.com/zoombooz" className={style.socialButton}>GitHub</a>
